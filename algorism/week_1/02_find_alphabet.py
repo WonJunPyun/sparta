@@ -5,10 +5,8 @@ def find_alphabet_occurrence_array(string):
         if not char.isalpha():
             continue
         else:
-            
-
-
-
+            arr_index = ord(char) - ord("a")
+            alphabet_occurrence_array[arr_index] += 1
 
     return alphabet_occurrence_array
 
